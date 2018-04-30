@@ -119,6 +119,13 @@ bool graphics_get_fullscreen() {
   }
 }
 
+/*
+** == missing??? ==
+*/
+void graphics_viewport_set_position(int x, int y) {
+  SDL_SetWindowPosition(screen, x, y);
+}
+
 void graphics_viewport_set_size(int w, int h) {
   SDL_SetWindowSize(screen, w, h);
   glViewport(0, 0, w, h);
